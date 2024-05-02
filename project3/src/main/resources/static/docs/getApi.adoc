@@ -1,0 +1,29 @@
+== GetController API
+
+=== GET /api/get-api/hello
+==== request
+include::{snippets}/get-controller-test/get-hello/http-request.adoc[]
+include::{snippets}/get-controller-test/get-hello/curl-request.adoc[]
+==== body
+include::{snippets}/get-controller-test/get-hello/request-body.adoc[]
+
+==== response
+include::{snippets}/get-controller-test/get-hello/httpie-request.adoc[]
+include::{snippets}/get-controller-test/get-hello/http-response.adoc[]
+==== body
+include::{snippets}/get-controller-test/get-hello/response-body.adoc[]
+
+=== GET /api/get-api/name
+==== request
+include::{snippets}/get-controller-test/get-name/http-request.adoc[]
+include::{snippets}/get-controller-test/get-name/curl-request.adoc[]
+==== body
+include::{snippets}/get-controller-test/get-name/request-body.adoc[]
+
+==== response
+include::{snippets}/get-controller-test/get-name/httpie-request.adoc[]
+include::{snippets}/get-controller-test/get-name/http-response.adoc[]
+==== body
+include::{snippets}/get-controller-test/get-name/response-body.adoc[]
+
+
