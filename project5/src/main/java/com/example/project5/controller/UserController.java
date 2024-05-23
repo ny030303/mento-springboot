@@ -2,9 +2,7 @@ package com.example.project5.controller;
 
 import com.example.project5.model.User;
 import com.example.project5.service.UserService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,8 +15,14 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping("/")
+    @GetMapping
     public List<User> findAll() {
         return userService.findAll();
+    }
+
+    @PostMapping
+    public User createUser(@RequestBody User user) {
+        userService.createUser(user);
+        return user;
     }
 }
