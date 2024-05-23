@@ -18,11 +18,7 @@ public class UserService {
 
     public List<User> findAll() {
         List<User> userList = null;
-        try {
-            userList = userMapper.findAll();
-        } catch (Exception e) {
-            System.out.println("데이터베이스 연결 실패: 사용자 호출 err");
-        }
+        userList = userMapper.findAll();
         return userList;
     }
     public void createUser(User user) {
